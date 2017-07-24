@@ -5,12 +5,18 @@
 \title{Heavy Photon Search}
 \author{S. Paul, M. Diamond}
 \institute{College of William and Mary, SLAC National Accelerator Laboratory}
+\conference{SLAC Summer Institute 2017}
+\email{sebouh.paul@gmail.com, mdiamond@slac.stanford.edu}
 %\author{R. Essig, C. Field, M. Graham, G. Haller, R. Herbst, J. Jaros, C. Kenney, T. Maruyama, K. Moffeit, T. Nelson, H. Neal, A. Odian, M. Oriunno, R. Partridge, S. Uemura, D. Walz}
 %\institute{SLAC National Accelerator Laboratory, Menlo Park, CA 94025}
 %\conference{Stanford Graduate Student Open House, April 5, 2011}
 %\leftlogo{hps_logo}
-\leftlogo{slac_logo_vector}
-\rightlogo{JLab_logo_white}
+%\leftlogo{slac_logo_vector}
+%\rightlogo{JLab_logo_white}
+\leftlogo{wm_logo_slac_logo_v}
+\rightlogo{hps_logo_jlab_logo_v}
+
+
 
 \renewcommand{\authorsize}{\huge}
 \renewcommand{\instsize}{\large}
@@ -118,7 +124,7 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 		\caption{Sample diagrams of (top left) radiative trident ($\gamma^*$), (top right) Bethe-Heitler trident, and (bottom) converted wide-angle bremsstrahlung reactions that comprise the primary QED background to $A'\to l^+l^-$ search channels.}
 	\end{figure}
 
-	QED tridents produce $e^+e^-$ pairs with nonzero invariant mass.  Additionally, photons produced via wide-angle bremsstrahlung are often converted to $e^+e^-$ pairs either in the target or in one of the layers of the silicon tracker.  These events are the dominant background to the A' signal.  Beam background due to our high beam current also contributes to our background.  
+	QED tridents produce $e^+e^-$ pairs with nonzero invariant mass.  Additionally, photons produced via wide-angle bremsstrahlung are often converted to $e^+e^-$ pairs either in the target or in one of the layers of the silicon tracker.  These events are the dominant background to the A' signal, while a smaller component of our background is beam background due to our high beam current.  
 	%Radiative tridents have identical kinematics to A' events. The A' events can only be separated by their invariant mass (resonance search) or by their decay length (displaced vertex search).
 	%The Bethe-Heitler process has a much higher total cross-section than either A' production or radiative tridents, but the associated background can be significantly reduced because of its different kinematics.
 
@@ -178,10 +184,10 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 		\caption{Renderings of the target assembly and silicon planes inside their support box.}
 	\end{figure}
 
-	The thickness of material in the tracker are minimized to reduce measurement uncertainties and backgrounds.
-	The best choice is silicon microstrip sensors, which are simple, low-mass and fast.
-	We use 4 cm $\times$ 10 cm silicon sensors left over from the cancelled Run IIb upgrades at the Tevatron, and
-	the APV25 readout chip developed for the CMS tracker at the LHC, which can read out continuously at 40 MHz.
+	%The thickness of material in the tracker are minimized to reduce measurement uncertainties and backgrounds.
+	%The best choice is silicon microstrip sensors, which are simple, low-mass and fast.
+	%We use 4 cm $\times$ 10 cm silicon sensors left over from the cancelled Run IIb upgrades at the Tevatron, and
+	%the APV25 readout chip developed for the CMS tracker at the LHC, which can read out continuously at 40 MHz.
 
 	%We will use 4 cm $\times$ 10 cm silicon sensors left over from the cancelled Run IIb upgrades at the Tevatron. These are radiation-tolerant and have a fine readout pitch, suitable for our high density of hits.
 
@@ -194,7 +200,7 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 	The tracker is made up of six measurement layers. %at distances of 10, 20, 30, 50, 70, and 90 cm downstream from the target.
 	%Each layer has two closely spaced planes of silicon microstrip sensors; one measures the bend plane coordinate
 	%for momentum measurement, and the other (at an angle to the first) provides stereo resolution for track identification.
-	Each layer has two closely spaced planes of silicon microstrip sensors to measure both X and Y coordinates for momentum measurement and track identification. Linear shift motion system allows SVT layers 1-3 to be moved within 15 mrad of the beam.
+	Each layer has two closely spaced planes of silicon microstrip sensors to measure both X and Y coordinates for momentum measurement and track identification. % Linear shift motion system allows SVT layers 1-3 to be moved within 15 mrad of the beam.
 	%Each plane is divided into a top and a bottom module to accomodate the dead zone. A module comprises a composite support structure, silicon sensors, hybrid boards, and water-glycol cooling.
 	%The hybrids and cooling tubes are located at the outside edges of the modules to keep them outside the high-flux region of the tracker.
 	%The top and bottom halves of each layer are mounted to piezo motors so the vertical gap can be controlled.
@@ -204,10 +210,11 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 	\subsection*{Electromagnetic Calorimeter}
 	\begin{figure}
 		\begin{center}
-			\includegraphics[width=0.95\textwidth]{ECal}
+			\includegraphics[width=0.95\textwidth]{ECal_looking_downstream}
                         %\includegraphics[width=0.47\textwidth]{ecal_module}
 		\end{center}
-		\caption{A rendering of the electromagnetic calorimeter setup looking down the beam line (left) and a more detailed view of the Ecal crystal. The Ecal contains 442 lead tungstate crystals.
+		\caption{A rendering of the electromagnetic calorimeter setup looking down the beam line. %(left) and a more detailed view of the Ecal crystal. 
+		The Ecal contains 442 lead tungstate (PbWO$_4$) crystals.
 		% The front exit window and side plates are rendered transparent to permit a view of the crystals and the vacuum plates.
 		}
 	\end{figure}
@@ -230,7 +237,7 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 	%	\caption{Lead tungstate (left) and shashlyk (right) detectors for use in the electromagnetic calorimeter.}
 	%\end{figure}
 
-	We use lead tungstate (PbWO$_4$) crystals read by Hamamatsu avalanche photodiodes. %conventional PMT photodetectors in the outer region.
+	%We use lead tungstate (PbWO$_4$) crystals read by Hamamatsu avalanche photodiodes. %conventional PMT photodetectors in the outer region.
 
 	%The lead tungstate (PbWO$_4$) crystals read by avalanche photodiodes that we are
 	%planning to use are from the CLAS inner calorimeter (IC) and they fully meet the latter
@@ -286,7 +293,14 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 	%	\end{center}
 	%	\caption{Trigger selection cuts and their effect on the A' acceptance and background rate, as a percentage of the total number of simulated events. An A' mass of 250 MeV was used for this illustration.}
 	%\end{figure}
-
+\section{Citations}
+	Blah
+	
+	Blah
+	
+	Blah 
+	
+	Blah
         \columnbreak
 	\section*{Experimental Reach}
 	The search channel for this experiment is $A'\to e^+e^-$, with or without a displaced vertex, depending on the magnitude of the coupling $\alpha'$.
@@ -308,7 +322,8 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 		\end{center}
 		\caption{Anticipated reach in $\alpha'/\alpha=\epsilon^2$ for the Heavy Photon Search (HPS) experiment at Hall B in
 		JLab (brown lines) with \emph{existing} constraints on an $A'$ from electron and muon anomalous magnetic
-		moment measurements (green), the BaBar search for $\gamma(3S)\to\gamma\mu^+\mu^-$, and several beam dump experiments. %Red is the reach for the 2015 HPS engineering run and blue is the expected reach for the full data set.}
+		moment measurements (green), the BaBar search for $\gamma(3S)\to\gamma\mu^+\mu^-$, and several beam dump experiments. %Red is the reach for the 2015 HPS engineering run and blue is the expected reach for the full data set.
+		}
 	\end{figure}
         \section*{Future of HPS}
 %        \subsection*{Layer 0 Upgrade}
@@ -333,13 +348,6 @@ Anomalies from cosmic rays\cite{NABO}, as well as dark matter distributions\cite
 	\item Including an additional layer to the Silicon Vertex Tracker, halfway between the target and the existing first layer of the tracker.  This would improve both the vertex position resolution and the mass resolution.  
 	\item Adding a hodoscope on the side where the positrons curve towards, which would be used for an additional positron-only trigger.  This upgrade would increase the geometric acceptance of the detector.  
 	\end{itemize}
-	\section{Citations}
-	Blah
 	
-	Blah
-	
-	Blah 
-	
-	Blah
 \end{multicols}
 \end{document}
