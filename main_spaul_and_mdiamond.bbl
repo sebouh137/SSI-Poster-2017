@@ -12,21 +12,13 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{\citenamefont{Finkbeiner et~al.}(2011)\citenamefont{Finkbeiner,
-  Goodenough, Slatyer, Vogelsberger, and Weiner}}]{Finkbeiner:2010sm}
-\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Finkbeiner}},
-  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Goodenough}},
-  \bibinfo{author}{\bibfnamefont{T.~R.} \bibnamefont{Slatyer}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Vogelsberger}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Weiner}},
+\bibitem[{\citenamefont{Finkbeiner}(2011)}]{Finkbeiner:2010sm}
+\bibinfo{author}{\bibfnamefont{D.~P. e.~a.} \bibnamefont{Finkbeiner}},
   \bibinfo{journal}{JCAP} \textbf{\bibinfo{volume}{1105}}, \bibinfo{pages}{002}
   (\bibinfo{year}{2011}), \eprint{1011.3082}.
 
-\bibitem[{\citenamefont{Vogelsberger et~al.}(2012)\citenamefont{Vogelsberger,
-  Zavala, and Loeb}}]{Vogelsberger:2012ku}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Vogelsberger}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Zavala}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Loeb}},
+\bibitem[{\citenamefont{Vogelsberger}(2012)}]{Vogelsberger:2012ku}
+\bibinfo{author}{\bibfnamefont{M.~e.~a.} \bibnamefont{Vogelsberger}},
   \bibinfo{journal}{Mon. Not. Roy. Astron. Soc.}
   \textbf{\bibinfo{volume}{423}}, \bibinfo{pages}{3740} (\bibinfo{year}{2012}),
   \eprint{1201.5892}.
@@ -38,10 +30,10 @@
   2015): San Diego, California, United States}}} (\bibinfo{year}{2016}), p.
   \bibinfo{pages}{7581862}, \eprint{1511.07844}.
 
-\bibitem[{\citenamefont{Balossino et~al.}(2017)}]{Balossino:2016nly}
-\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Balossino}}
-  \bibnamefont{et~al.} (\bibinfo{collaboration}{HPS}), \bibinfo{journal}{Nucl.
-  Instrum. Meth.} \textbf{\bibinfo{volume}{A854}}, \bibinfo{pages}{89}
-  (\bibinfo{year}{2017}), \eprint{1610.04319}.
+\bibitem[{\citenamefont{Balossino}(2017)}]{Balossino:2016nly}
+\bibinfo{author}{\bibfnamefont{I.~e.~a.} \bibnamefont{Balossino}}
+  (\bibinfo{collaboration}{HPS}), \bibinfo{journal}{Nucl. Instrum. Meth.}
+  \textbf{\bibinfo{volume}{A854}}, \bibinfo{pages}{89} (\bibinfo{year}{2017}),
+  \eprint{1610.04319}.
 
 \end{thebibliography}
