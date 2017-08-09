@@ -5,6 +5,7 @@
 
 \usepackage[square,numbers]{natbib}
 
+
 \title{Heavy Photon Search}
 \author{S. Paul, M. Diamond}
 \institute{College of William and Mary, SLAC National Accelerator Laboratory}
@@ -25,6 +26,10 @@
 \renewcommand{\instsize}{\large}
 
 \begin{document}
+
+\setlength{\logowidth}{0.15\textheight}
+\setlength{\titlewidth}{\textwidth}
+\addtolength{\titlewidth}{-2\logowidth}
 \maketitle
 
 %\large 
@@ -41,8 +46,9 @@ Anomalies from cosmic rays
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.35\textwidth]{dm_self_interaction}\hspace{1cm}
-\includegraphics[width=0.55\textwidth]{dm_coannihilation}
+\makebox[\textwidth]{
+\includegraphics[width=0.43\textwidth]{dm_self_interaction}\hspace{1cm}
+\includegraphics[width=0.63\textwidth]{dm_coannihilation}}
 
 \label{default}
 \end{center}
@@ -118,13 +124,13 @@ Anomalies from cosmic rays
 
 \begin{figure}
 		\begin{center}
-			\includegraphics[width=\textwidth]{ap_kine_topokinematics}
+			\makebox[\textwidth]{\includegraphics[width=1.1\textwidth]{ap_kine_topokinematics}}
 		\end{center}
-		\caption{Topology and kinematics of an A' production as an incoming electron scatters off a nucleus with atomic number Z, and then decays.}
+		\caption{Topology and kinematics of an $A'$ production as an incoming electron scatters off a nucleus with atomic number $Z$, and then decays.}
 	\end{figure}
 
 
-	A' particles are generated in electron collisions on a fixed target by a process analogous to
+	$A'$ particles are generated in electron collisions on a fixed target by a process analogous to
 	ordinary photon bremsstrahlung.
 	%The major difference in the kinematics is that nearly the entire beam energy is carried by the produced A'.
 	%The A' production rate is suppressed relative to photon bremsstrahlung by a factor of $\epsilon^2m_e^2/m_{A'}^2$.
@@ -142,7 +148,7 @@ Anomalies from cosmic rays
 	\subsection*{Backgrounds}
 	\begin{figure}
 		\begin{center}
-			\includegraphics[width=\textwidth]{trident_wab}
+			\makebox[\textwidth]{\includegraphics[width=1.1\textwidth]{trident_wab}}
 		\end{center}
 		%\caption{Sample diagrams of (top left) radiative trident ($\gamma^*$), (top right) Bethe-Heitler trident, and (bottom) converted wide-angle bremsstrahlung reactions, that comprise the primary QED background to $A'\to l^+l^-$ search channels.}
 		\caption{Sample diagrams of QED background events: (top-left) radiative trident ($\gamma^*$), (top-right) Bethe-Heitler trident, and (bottom) converted wide-angle bremsstrahlung reactions}
@@ -227,7 +233,7 @@ In addition to the background sources shown above, beam background is non-neglig
 	%     The tracker is made up of six measurement layers. %at distances of 10, 20, 30, 50, 70, and 90 cm downstream from the target.
 	%Each layer has two closely spaced planes of silicon microstrip sensors; one measures the bend plane coordinate
 	%for momentum measurement, and the other (at an angle to the first) provides stereo resolution for track identification.
-	Each of the SVT's six measurement layers has two closely-spaced planes of silicon microstrip sensors to measure both X and Y coordinates for momentum measurement and track identification. \cite{Adrian:2015hst}
+	Each of the SVT's six measurement layers has two closely-spaced planes of silicon microstrip sensors to measure both $X$ and $Y$ coordinates for momentum measurement and track identification. \cite{Adrian:2015hst}
 	% Linear shift motion system allows SVT layers 1-3 to be moved within 15 mrad of the beam.
 	%Each plane is divided into a top and a bottom module to accomodate the dead zone. A module comprises a composite support structure, silicon sensors, hybrid boards, and water-glycol cooling.
 	%The hybrids and cooling tubes are located at the outside edges of the modules to keep them outside the high-flux region of the tracker.
@@ -248,8 +254,7 @@ In addition to the background sources shown above, beam background is non-neglig
 		}
 	\end{figure}
 	
-The Ecal contains 442 lead tungstate (PbWO$_4$) crystals and covers the full acceptance region of the silicon tracker.  It provides the trigger for data acquisition and also
-	is used for electron identification during the data analysis. \cite{Balossino:2016nly}
+The Ecal covers almost the full acceptance region of the SVT and is used for the data acquisition trigger, and also electron identification during the data analysis. \cite{Balossino:2016nly}
 	
 	%ECal will be positioned after the
 	%analyzing dipole magnet, with the front face $\sim$130 cm downstream of the target, and will cover the full acceptance region of the silicon tracker.
@@ -330,21 +335,23 @@ The Ecal contains 442 lead tungstate (PbWO$_4$) crystals and covers the full acc
 \end{small}
 \columnbreak
 	\section*{Experimental Reach}
-	The search channel for this experiment is $A'\to e^+e^-$, with or without a displaced vertex, depending on the coupling $\alpha'$:
+Our experiment searches for $A'\to e^+e^-$, with or without a displaced vertex, depending on the coupling $\alpha'$:
+\begin{small}
 \begin{itemize}
 
 	%In a resonance search, exclusion power is determined by the ratio of the signal within an invariant mass window to $\sqrt{N_{bin}}$, where $N_{bin}$ is the total background statistics in the same window. 
 \item A resonance search is sensitive at large values of $\alpha'$, where the A' production rate is high.
-\item A displaced vertex search is sensitive at lower $\alpha'$, where decay lengths are longer than the the tails of the vertex distribution of prompt tridents.
+\item A displaced-vertex search is sensitive at lower $\alpha'$, where decay lengths are longer than the the tails of the vertex distribution of prompt tridents.
 \end{itemize}
+\end{small}
 	
 	%	The sensitivity of a vertexing search is dependent on whether a signal event is detected with $z>zcut(m_{A'})$, where $zcut(m_{A'})$ is a mass-dependent value such that the expected background in each resolution-limited mass window $\delta m_{A'}$, with reconstructed vertices beyond this cut, does not exceed 0.5 events in the $3\times10^6$ s run period.
 	\begin{figure}
 		\begin{center}
 			%\includegraphics[width=1.05\textwidth]{s_b}
-	\includegraphics[width=1.00\textwidth,trim ={0 0 0.5cm 0}]{sig_examples}
+\makebox[\textwidth]{	\includegraphics[width=1.1\textwidth,trim ={0 0.5cm 0.5cm 0},clip]{sig_examples}}
 		\end{center}
-		\caption{Example signals and backgrounds for (top) a resonance search and (bottom) a vertexing search, with $\approx$ 5$\sigma$ significance.}
+		\caption{Example signals and backgrounds for (top) a resonance search and (bottom) a displaced-vertex search, with $\approx$ 5$\sigma$ significance.}
 	\end{figure}
 
 %Existing constraints (shaded, below) on an $A'$ come from a variety of sources, including
@@ -361,14 +368,15 @@ The Ecal contains 442 lead tungstate (PbWO$_4$) crystals and covers the full acc
 
 		
 			%\makebox[\textwidth]
-{\includegraphics[trim={1cm 1cm 1cm 2cm},width=1.1\textwidth]{reach/reach_new.pdf}}
+{\includegraphics[trim={1.1cm 1cm -0cm 3cm},width=1.2\textwidth,clip]{reach/reach_new.pdf}}
 		\end{center}
 		\caption{Anticipated reach in $\alpha'/\alpha=\epsilon^2$ for HPS using existing data samples (solid lines) and larger future data samples (dashed).  
-		
- 	Shaded regions represent existing constraints on the A' from various other experiments, including beam-dumps, other resonance searches, and anomalous magnetic moments of electrons and muons.  
+		 
 }
 
 	\end{figure}
+	
+	Existing constraints on the A' come from various other experiments, including beam-dumps, other resonance searches, and anomalous magnetic moments of electrons and muons. 
         \section*{Future of HPS}
 %        \subsection*{Layer 0 Upgrade}
 %        HPS is planning an upgrade to the SVT by adding another silicon tracking layer (Layer 0) between the target and 
@@ -385,13 +393,14 @@ The Ecal contains 442 lead tungstate (PbWO$_4$) crystals and covers the full acc
 %	\end{figure}
 
         %\subsection*{2018 Data Taking}
-        The major physics results of HPS will result from the 2019 running. %and will produce several theses. HPS is currently looking for 
+        The major physics results of HPS will result from the 2019 running, %and will produce several theses. HPS is currently looking for 
 %        students (both rotation and permanent) for upgrades, data taking, and data analysis.
-        Several upgrades have been proposed in order to improve the reach of the experiment through improved resolution and acceptance:  
+        with several proposed upgrades to improve the reach of the experiment through improved resolution and acceptance:  
+        \begin{small}
      	\begin{itemize}
-	\item Adding an additional layer to the SVT, halfway between the target and the existing first layer.  
-	\item Adding a hodoscope for an additional positron-only trigger.  
+	\item Add a tracking ``layer 0" to the SVT,  between the target and the existing layer 1.  
+	\item Add a hodoscope for an additional positron-only trigger.  
 	\end{itemize}
-	
+	\end{small}
 \end{multicols}
 \end{document}
